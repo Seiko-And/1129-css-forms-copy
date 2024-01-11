@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Global travelers</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Come travel with us!</h1>
+        </header>
+        
+        <main>
+            <h2>Get in touch, we'd love to hear from you</h2>
+            <form action="#" method="post" id="mainContent" enctype="text/plain">
+              
+              <fieldset>
+                  <legend>Your information</legend>
+                  
+                  <ul>
+                      <li>
+                         <label for="fName">First Name*:</label>
+                         <input type="text" id="fName" name="first_name" required placeholder="Enter your first name"> 
+                      </li>
+                      <li>
+                          <label for="lName">Last Name:</label>
+                          <input type="text" id="lName" name="last_name" placeholder="Enter your last name">
+                      </li>
+                      <li>
+                          <label for="email">Email*:</label>
+                          <input type="email" id="email" name="email" required placeholder="yourName@domain.com">
+                      </li>
+                      <li>
+                          <label for="phone">Phone Number:</label>
+                          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                      </li>
+                  </ul>          
+              </fieldset>
+              
+              <fieldset>
+                  <legend>Trip preferences</legend>
+                  <h3>Please select your preferred destination</h3>
+                  <ul class="radioList">
+                      <li>
+                          <input type="radio" id="beach" value="beach" name="destination">
+                          <label for="beach">Beach</label>
+                      </li>
+                      <li>
+                          <input type="radio" id="mt" value="mountain" name="destination">
+                          <label for="mt">Mountains</label>
+                      </li>
+                      <li>
+                          <input type="radio" id="desert" value="desert" name="destination">
+                          <label for="desert">Desert</label>
+                      </li>
+                      <li>
+                          <input type="radio" id="swamp" value="swamp" name="destination">
+                          <label for="swamp">Swamp</label>
+                      </li>
+                  </ul>
+                  
+                  <h3>How many people in your travel party?</h3>
+                  <select name="numTravelers" id="numTravelers">
+                      <option value="one">1</option>
+                      <option value="two" selected>2</option>
+                      <option value="three">3</option>
+                      <option value="four">4</option>
+                      <option value="five">5</option>
+                      <option value="six">6</option>
+                      <option value="more">More than 6</option>   
+                  </select>
+                  
+                  <h3>Select your interests:</h3>
+                  <ul class="radioList">
+                      <li>
+                          <input type="checkbox" name="interest" id="surf">
+                          <label for="surf">Surfing</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="fish">
+                          <label for="fish">Fishing</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="swim">
+                          <label for="swim">Swimming</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="mtBike">
+                          <label for="mtBike">Mountain biking</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="hike">
+                          <label for="hike">Hiking</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="rafting">
+                          <label for="rafting">Rafting</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="birdWatch">
+                          <label for="birdWatch">Bird Watching</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" name="interest" id="gatorWrestle">
+                          <label for="gatorWrestle">Aligator Wrestling</label>
+                      </li>
+                  </ul>
+              </fieldset>
+               
+               <div class="wrapper">
+                   <h3>Questions or feedback</h3>
+                   <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea>
+               </div>
+                
+                <input type="reset" id="reset" class="button">
+                <input type="submit" id="submit" class="button" value="Send this information!">
+                
+            </form>
+        </main>
+        
+        <footer>
+            <p>Copyright 2023</p>
+        </footer>
+    </body>
+</html>
